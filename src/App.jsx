@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './Component/Counter/Counter'
 import Navbar from './pages/Navbar/Navbar'
 import Home from './pages/Home/Home'
+import Anagram from './Component/Anagram/Anagram'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,8 +13,9 @@ function App() {
   return (
     <>
       {/* <Counter/> */}
-      <Navbar/>
-      <Home/>
+      {/* <Navbar/>
+      <Home/> */}
+      <Anagram/>
     </>
   )
 }
