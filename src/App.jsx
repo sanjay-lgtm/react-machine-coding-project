@@ -7,6 +7,7 @@ import Navbar from './pages/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import Anagram from './Component/Anagram/Anagram'
 import QuoteGenerator from './Component/QuoteGenerater/QuoteGenerator'
+import ImageGallery from './Component/ImageGallery/ImageGallary'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
       {/* <Navbar/>
       <Home/> */}
       {/* <Anagram/> */}
-      <QuoteGenerator/>
+      {/* <QuoteGenerator/> */}
+      <ImageGallery/>
     </>
   )
 }

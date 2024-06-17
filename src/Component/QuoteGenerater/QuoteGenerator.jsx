@@ -44,7 +44,7 @@ const QuoteGenerator = () => {
                {quote && (
                  <>
                  <p className='text-xl font-semibold mb-4'> {quote.content}</p>
-                 <p className='text-gray-500 mb-4'>{quote.author}</p>
+                 <p className='text-gray-500 mb-4'>- {quote.author}</p>
              </>
                )}
                 <button 
