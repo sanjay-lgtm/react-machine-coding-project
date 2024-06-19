@@ -10,6 +10,7 @@ import QuoteGenerator from './Component/QuoteGenerater/QuoteGenerator'
 import ImageGallery from './Component/ImageGallery/ImageGallary'
 import Accordion from './Component/Accordian/Accordion'
 import Accordian from './Component/Accordian/Accordian'
+import BackgroundChanger from './Component/BackgroundChanger/BackgroundChanger'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,8 @@ function App() {
       {/* <Anagram/> */}
       {/* <QuoteGenerator/> */}
       {/* <ImageGallery/> */}
-      <Accordian/>
+      {/* <Accordian/> */}
+      <BackgroundChanger/>
     </>
   )
 }
