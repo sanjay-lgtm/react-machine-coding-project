@@ -13,7 +13,9 @@
 // import BackgroundChanger from './Component/BackgroundChanger/BackgroundChanger'
 // import Theme from './Component/LightDarkTheme/Theme'
 import GuessTheNumber from './Component/GuessTheNumber/GuessTheNumber'
+import Pagination from './Component/Pagination/Pagination'
 import QrCode from './Component/QrCode/QrCode'
+import StackGenerate from './Component/StackGenerate/StackGenerate'
 import TableColizer from './Component/TableColizer/TableColizer'
 
 
@@ -58,7 +60,9 @@ function App() {
       {/* <AppContent /> */}
       {/* <QrCode/> */}
       {/* <TableColizer/> */}
-      <GuessTheNumber/>
+      {/* <GuessTheNumber/> */}
+      {/* <Pagination/> */}
+      <StackGenerate/>
     </div>
   )
 }

@@ -31,8 +31,8 @@ const GuessTheNumber = () => {
     }
   return (
     <div className={`flex flex-col items-center justify-center min-h-screen ${theme ==='light' ? 'bg-gray-100' : 'bg-gray-900'}  p-4 transition-colors duration-300`}>
-        <div className='absolute top-4 right-4'>
-            <button className='text-2xl' onClick={toggleTheme}> 
+        <div className='absolute top-4 right-10'>
+            <button className='text-4xl' onClick={toggleTheme}> 
                 {theme === 'light' ? <FaMoon className='text-gray-800'/> : <FaSun className='text-yellow-300'/>}
             </button>
         </div>
