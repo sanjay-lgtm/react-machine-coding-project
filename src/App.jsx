@@ -12,7 +12,9 @@
 // import Accordian from './Component/Accordian/Accordian'
 // import BackgroundChanger from './Component/BackgroundChanger/BackgroundChanger'
 // import Theme from './Component/LightDarkTheme/Theme'
+import GuessTheNumber from './Component/GuessTheNumber/GuessTheNumber'
 import QrCode from './Component/QrCode/QrCode'
+import TableColizer from './Component/TableColizer/TableColizer'
 
 
 // const AppContent = () => {
@@ -54,7 +56,9 @@ function App() {
       {/* <Accordian/> */ }
       {/* <BackgroundChanger/> */ }
       {/* <AppContent /> */}
-      <QrCode/>
+      {/* <QrCode/> */}
+      {/* <TableColizer/> */}
+      <GuessTheNumber/>
     </div>
   )
 }
