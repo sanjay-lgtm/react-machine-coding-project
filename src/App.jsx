@@ -12,6 +12,7 @@
 // import Accordian from './Component/Accordian/Accordian'
 // import BackgroundChanger from './Component/BackgroundChanger/BackgroundChanger'
 // import Theme from './Component/LightDarkTheme/Theme'
+import Dropdown from './Component/DropDown/Dropdown'
 import GuessTheNumber from './Component/GuessTheNumber/GuessTheNumber'
 import Pagination from './Component/Pagination/Pagination'
 import QrCode from './Component/QrCode/QrCode'
@@ -64,7 +65,8 @@ function App() {
       {/* <GuessTheNumber/> */}
       {/* <Pagination/> */}
       {/* <StackGenerate/> */}
-      <WordCount/>
+      {/* <WordCount/> */}
+      <Dropdown/>
     </div>
   )
 }
