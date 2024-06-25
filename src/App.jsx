@@ -17,6 +17,7 @@ import Pagination from './Component/Pagination/Pagination'
 import QrCode from './Component/QrCode/QrCode'
 import StackGenerate from './Component/StackGenerate/StackGenerate'
 import TableColizer from './Component/TableColizer/TableColizer'
+import WordCount from './Component/WordCount/WordCount'
 
 
 // const AppContent = () => {
@@ -62,7 +63,8 @@ function App() {
       {/* <TableColizer/> */}
       {/* <GuessTheNumber/> */}
       {/* <Pagination/> */}
-      <StackGenerate/>
+      {/* <StackGenerate/> */}
+      <WordCount/>
     </div>
   )
 }
