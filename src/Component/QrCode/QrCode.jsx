@@ -14,6 +14,13 @@ const QrCode = () => {
     }
     return (
         <div className={ `min-h-screen flex flex-col items-center justify-center ${theme === 'light' ? 'bg-gray-100' : 'bg-gray-900'}  p-4 transition-colors duration-300` }>
+            <div className='absolute top-4 right-10'>
+                <button
+                    className={ `mt-4 px-4 py-2 rounded-full ${theme === 'light' ? 'bg-blue-500' : 'bg-yellow-500'} text-white text-4xl` }
+                    onClick={ toggleTheme }
+                > { theme === 'light' ? <FaMoon className='text-gray-800' /> : <FaSun className='text-yellow-300' /> }
+                </button>
+            </div>
             <div className={ `p-6 rounded-lg shadow-lg ${theme == 'light' ? 'bg-white' : 'bg-gray-800'}` }>
                 <h1 className={ `text-3xl font-bold mb-4 text-center ${theme === 'light' ? 'text-black' : 'text-white'}` }>QR Code Generator</h1>
                 <input type='text'
@@ -26,11 +33,8 @@ const QrCode = () => {
                     <QRCode value={ inputValue } />
                 </div>
             </div>
-            <button
-                className={ `mt-4 px-4 py-2 rounded ${theme === 'light' ? 'bg-blue-500' : 'bg-yellow-500'} text-white` }
-                onClick={ toggleTheme }
-                > {theme === 'light' ? <FaMoon className='text-gray-800'/> : <FaSun className='text-yellow-300'/>}</button>
-    </div>
+
+        </div>
     )
 }
 
