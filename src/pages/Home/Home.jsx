@@ -1,43 +1,31 @@
 import React, { useState } from 'react';
 import Card from '../card/Card';
+import { useTheme } from '../../context/ThemeContext';  // import useTheme hook
 
 const Home = ({ components, setSelectedComponent }) => {
+  const { theme, toggleTheme } = useTheme();  // get theme and toggleTheme from context
   const [search, setSearch] = useState('');
-  const [dropdown1, setDropdown1] = useState('');
-  const [dropdown2, setDropdown2] = useState('');
 
   const filteredComponents = components.filter(component => 
     component.title.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <div className="container mx-auto p-4">
+    <div className={`container mx-auto p-4 ${theme === 'light' ? 'bg-gray-100 text-black' : 'bg-gray-900 text-white'}`}>
       <div className="flex mb-4 space-x-2">
         <input
           type="text"
           placeholder="Search..."
-          className="border p-2 rounded flex-grow"
+          className={`border p-2 rounded flex-grow ${theme === 'light' ? 'border-gray-300' : 'border-gray-600 bg-gray-700 text-white'}`}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        {/* <select
-          className="border p-2 rounded"
-          value={dropdown1}
-          onChange={(e) => setDropdown1(e.target.value)}
+        <button 
+          onClick={toggleTheme} 
+          className={`px-4 py-2 rounded ${theme === 'light' ? 'bg-blue-500 text-white' : 'bg-yellow-500 text-black'}`}
         >
-          <option value="">Dropdown 1</option>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-        </select>
-        <select
-          className="border p-2 rounded"
-          value={dropdown2}
-          onChange={(e) => setDropdown2(e.target.value)}
-        >
-          <option value="">Dropdown 2</option>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-        </select> */}
+          Toggle Theme
+        </button>
       </div>
       <div className="grid grid-cols-2 gap-4">
         {filteredComponents.map((component, index) => (
