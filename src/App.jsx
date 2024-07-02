@@ -13,6 +13,8 @@ import TableColizer from './Component/TableColizer/TableColizer';
 import WordCount from './Component/WordCount/WordCount';
 import ImageGallery from './Component/ImageGallery/ImageGallary';
 import BackgroundChanger from './Component/BackgroundChanger/BackgroundChanger';
+import Pagination from './Component/Pagination/Pagination';
+import Accordian from './Component/Accordian/Accordian';
 
 const components = [
   { path: '/Anagram', element: <Anagram />, title: 'Anagram' },
@@ -26,6 +28,9 @@ const components = [
   { path: '/WordCount', element: <WordCount />, title: 'WordCount' },
   { path: '/ImageGallery', element: <ImageGallery />, title: 'ImageGallery' },
   { path: '/BackgroundChanger', element: <BackgroundChanger />, title: 'BackgroundChanger' },
+  { path: '/Pagination', element: <Pagination />, title: 'Pagination' },
+  { path: '/Accordian', element: <Accordian />, title: 'Accordian' },
+  
   // Add more components here
 ];
 
