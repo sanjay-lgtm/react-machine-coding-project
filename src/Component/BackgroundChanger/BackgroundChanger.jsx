@@ -26,7 +26,7 @@ const BackgroundChanger = () => {
         >
            
             <div className="text-center">
-                <h1 className={`text-3xl font-bold mb-6 ${theme === 'light' ? 'text-black' : 'text-white'}`}>Random Background Color Changer</h1>
+                <h1 className={`text-3xl font-bold mb-6 ${theme === 'light' ? 'text-black' : 'text-gray-500'}`}>Random Background Color Changer</h1>
                 <button
                     onClick={changeColor}
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
